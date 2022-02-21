@@ -1,20 +1,31 @@
 body{
+    background-image: url(bg.jpg);
     margin: auto;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 
+.nav-drp-dwn{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.nav-col{
+    background-color: aquamarine;
+}
+
 .main-grid{
     display: grid;
     grid-template-columns: 5vw 10vw 45vw 5vw 20vw 10vw 5vw;
-    grid-template-rows: 10vh 5vh 35vh 10vh 20vh 0vh;
+    grid-template-rows: 10vh 5vh 35vh 10vh 20vh 10vh 10vh;
     height: 100vh;
     width: 100vw;
 }
 
 .name-box{
     grid-column: 2/4;
-    grid-row: 2/4;
+    grid-row: 1/4;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -29,6 +40,7 @@ body{
     font-weight: 500;
 }
 
+
 .tagline{
     font-size: 5vh;
     align-self: flex-end;
@@ -36,8 +48,57 @@ body{
     font-weight: 400;
 }
 
+@media(max-width:600px){
+    .main-grid{
+        display: grid;
+        grid-template-columns: 5vw 10vw 45vw 5vw 20vw 10vw 5vw;
+        grid-template-rows: 10vh 5vh 35vh 10vh 30vh 10vh;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .name{
+        font-size: 4vh;
+        align-self: flex-end;
+        text-align: right;
+        font-weight: 500;
+    }
+
+    .intro-box{
+    
+        grid-column: 2/8;
+        grid-row: 4/6;
+        display: flex;
+        /* max-width: 60vw; */
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    
+    .tagline{
+        font-size: 3vh;
+        align-self: flex-end;
+        text-align: right;
+        font-weight: 400;
+    }
+
+    .intro{
+        text-align: center;
+        font-size: 1vh;
+    }
+    
+    .profile-picture{
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: start;
+        z-index: -10;
+    }
+    
+}
+
 .intro-box{
-    grid-column: 3/6;
+    
+    grid-column: 2/7;
     grid-row: 4/6;
     display: flex;
     /* max-width: 60vw; */
@@ -93,5 +154,4 @@ body{
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: nowrap;
-
 }
