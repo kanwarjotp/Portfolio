@@ -1,5 +1,5 @@
 
-    Portfolio Website, a basic website to showcase coding projesct, skills, achievments.
+    Portfolio Website, a basic website to showcase coding projects, skills, achievments.
     Copyright (C) 2022  Kanwar Jot Parkash Singh
 
     This program is free software: you can redistribute it and/or modify
